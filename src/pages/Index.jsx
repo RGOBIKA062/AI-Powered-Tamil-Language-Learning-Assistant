@@ -30,7 +30,9 @@ import {
   MessageCircle,
   Play,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  RefreshCw,
+  Film
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -155,6 +157,71 @@ const Index = () => {
       color: "from-primary to-warning",
       link: "/tutor"
     }
+      ,
+      {
+        icon: BookOpen,
+        title: "Tirukkural",
+        description: "Daily wisdom from Tamil classics",
+        color: "from-warning to-accent",
+        link: "/tirukkural"
+      }
+      ,
+      {
+        icon: Star,
+        title: "Word Of Day",
+        description: "Discover a new Tamil word every day",
+        color: "from-primary to-accent",
+        link: "/wordofday"
+      },
+      {
+        icon: Flame,
+        title: "Tongue Twisters",
+        description: "Fun Tamil tongue twisters to practice",
+        color: "from-warning to-primary",
+        link: "/tonguetwisters"
+      },
+      {
+        icon: Trophy,
+        title: "Streak",
+        description: "Track your learning streaks",
+        color: "from-success to-warning",
+        link: "/streak"
+      },
+      {
+        icon: PenTool,
+        title: "Script Art",
+        description: "Create and explore Tamil script art",
+        color: "from-accent to-primary",
+        link: "/scriptart"
+      },
+      {
+        icon: RefreshCw,
+        title: "Reverse Mode",
+        description: "Challenge yourself with reverse learning",
+        color: "from-destructive to-accent",
+        link: "/reversemode"
+      },
+      {
+        icon: Film,
+        title: "Cinema Clips",
+        description: "Learn Tamil with movie scenes",
+        color: "from-primary to-warning",
+        link: "/cinemaclips"
+      },
+      {
+        icon: Users,
+        title: "Debate Buddy",
+        description: "Practice Tamil debate skills",
+        color: "from-warning to-success",
+        link: "/debatebuddy"
+      },
+      {
+        icon: BookOpen,
+        title: "Flashcards",
+        description: "Review and master Tamil vocabulary",
+        color: "from-success to-primary",
+        link: "/flashcards"
+      }
   ];
 
   const achievements = [
