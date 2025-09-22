@@ -139,8 +139,8 @@ Valaththakkaal vaazhkkaih thunai.`,
   {
     number: 73,
     adhigaram: "Adhigaram 7: The Possession of Children",
-  tamil: `தம்பொருள் என்பதம் மக்கள்
-அவர்பொருள் தம்தம் வினையான் வரும்.`,
+    tamil: `தம்பொருள் என்பதம் மக்கள் அவர்பொருள்
+தம்தம் வினையான் வரும்.`,
     transliteration: `Thamborul enpatham makkal avarporul
 Thamtham vinaiyaan varum.`,
     english: "Children are one's own possession; their wealth is the result of their own deeds.",
