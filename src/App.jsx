@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Practice from "./pages/Practice";
@@ -26,7 +26,7 @@ import WordOfDay from "./pages/WordOfDay";
 import ChatBuddy from "./pages/ChatBuddy";
 import Flashcards from "./pages/Flashcards";
 import Challenges from "./pages/Challenges";
-import TongueTwisters from "./pages/TongueTwisters";
+import TamilTongueTwisterChallenge from "./pages/TongueTwisters";
 import ReverseMode from "./pages/ReverseMode";
 import Tirukkural from "./pages/Tirukkural";
 import Login from "./pages/Login";
@@ -61,10 +61,13 @@ const App = () => (
           <Route path="/debate-buddy" element={<DebateBuddy />} />
           <Route path="/cinema-clips" element={<CinemaClips />} />
           <Route path="/word-of-day" element={<WordOfDay />} />
+          <Route path="/wordofday" element={<WordOfDay />} />
           <Route path="/chat-buddy" element={<ChatBuddy />} />
           <Route path="/flashcards" element={<Flashcards />} />
           <Route path="/challenges" element={<Challenges />} />
-          <Route path="/tongue-twisters" element={<TongueTwisters />} />
+          <Route path="/tongue-twisters" element={<TamilTongueTwisterChallenge />} />
+          {/* Redirect legacy/typo route to correct one */}
+          <Route path="/tonguetwisters" element={<Navigate to="/tongue-twisters" replace />} />
           <Route path="/reverse-mode" element={<ReverseMode />} />
           <Route path="/tirukkural" element={<Tirukkural />} />
           <Route path="/login" element={<Login />} />
